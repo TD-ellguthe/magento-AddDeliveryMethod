@@ -1,2 +1,2 @@
-# TdEllguthE_Shipping
-- all shipping-related logic & configuration
+# TdEllguthE_NewShippingMethod
+- introduces a new shipping method

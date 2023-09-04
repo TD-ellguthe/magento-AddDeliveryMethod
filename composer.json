@@ -1,0 +1,67 @@
+{
+  "name": "td-ellguthe/project-newdeliverymethod",
+  "type": "project",
+  "license": [
+    "proprietary"
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "magento/composer-root-update-plugin": true,
+      "magento/composer-dependency-version-audit-plugin": true,
+      "magento/inventory-composer-installer": true,
+      "magento/magento-composer-installer": true
+    }
+  },
+  "version": "2.4.6",
+  "require": {
+    "php": "^8.1.0",
+    "magento/product-community-edition": "2.4.6-p2",
+    "magento/composer-root-update-plugin": "^1.1.0"
+  },
+  "autoload": {
+    "exclude-from-classmap": [
+      "**/dev/**",
+      "**/update/**",
+      "**/Test/**"
+    ],
+    "files": [
+      "app/etc/NonComposerComponentRegistration.php"
+    ],
+    "psr-0": {
+      "": [
+        "app/code/",
+        "generated/code/"
+      ]
+    },
+    "psr-4": {
+      "Magento\\": "app/code/Magento/",
+      "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+      "Magento\\Setup\\": "setup/src/Magento/Setup/"
+    }
+  },
+  "require-dev": {
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Magento\\PhpStan\\": "dev/tests/static/framework/Magento/PhpStan/",
+      "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
+      "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
+      "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/",
+      "Magento\\Tools\\": "dev/tools/Magento/Tools/",
+      "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  ],
+  "extra": {
+    "magento-force": "override"
+  }
+}

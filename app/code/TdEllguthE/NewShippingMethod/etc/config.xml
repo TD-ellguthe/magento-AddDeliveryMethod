@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* Copyright (c) 2023 TechDivision GmbH
+* All rights reserved
+*
+* This product includes proprietary software developed at TechDivision GmbH, Germany
+* For more information see http://www.techdivision.com/
+*
+* To obtain a valid license for using this software please contact us at
+* license@techdivision.com
+*/
+/**
+* @copyright  Copyright (c) 2023 TechDivision GmbH (http://www.techdivision.com)
+* @link       http://www.techdivision.com/
+* @author     Team Zero <zero@techdivision.com>
+*/
+-->
+<config
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <mySimpleShippingMethod>
+                <title>Service Provider Name</title>
+                <name>Shipping Rate Name</name>
+                <price>14.90</price>
+                <active>1</active>
+                <sort_order>10</sort_order>
+                <handling_type>F</handling_type> <!-- "fixed", see \Magento\Shipping\Model\Source\HandlingType -->
+                <sallowspecific>0</sallowspecific> <!-- no country limitation -->
+                <model>TdEllguthE\NewDeliveryMethod\Model\Carrier\MySimpleShippingMethod</model>
+                <specificerrmsg>This shipping method is not available.</specificerrmsg>
+                <description>My new shipping method description.</description>
+            </mySimpleShippingMethod>
+        </carriers>
+    </default>
+</config>

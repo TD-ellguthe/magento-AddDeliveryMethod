@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* Copyright (c) 2023 TechDivision GmbH
+* All rights reserved
+*
+* This product includes proprietary software developed at TechDivision GmbH, Germany
+* For more information see http://www.techdivision.com/
+*
+* To obtain a valid license for using this software please contact us at
+* license@techdivision.com
+*/
+/**
+* @copyright  Copyright (c) 2023 TechDivision GmbH (http://www.techdivision.com)
+* @link       http://www.techdivision.com/
+* @author     Team Zero <zero@techdivision.com>
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="TdEllguthE_Shipping"/>
+</config>

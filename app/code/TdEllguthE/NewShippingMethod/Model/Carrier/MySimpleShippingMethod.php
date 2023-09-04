@@ -12,7 +12,7 @@
 
 declare(strict_types=1);
 
-namespace TdEllguthE\NewDeliveryMethod\Model\Carrier;
+namespace TdEllguthE\NewShippingMethod\Model\Carrier;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\Exception\LocalizedException;

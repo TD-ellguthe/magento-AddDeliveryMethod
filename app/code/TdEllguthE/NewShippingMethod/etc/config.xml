@@ -28,7 +28,7 @@
                 <sort_order>10</sort_order>
                 <handling_type>F</handling_type> <!-- "fixed", see \Magento\Shipping\Model\Source\HandlingType -->
                 <sallowspecific>0</sallowspecific> <!-- no country limitation -->
-                <model>TdEllguthE\NewDeliveryMethod\Model\Carrier\MySimpleShippingMethod</model>
+                <model>TdEllguthE\NewShippingMethod\Model\Carrier\MySimpleShippingMethod</model>
                 <specificerrmsg>This shipping method is not available.</specificerrmsg>
                 <description>My new shipping method description.</description>
             </mySimpleShippingMethod>

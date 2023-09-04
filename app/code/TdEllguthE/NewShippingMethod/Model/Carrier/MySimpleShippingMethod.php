@@ -99,22 +99,6 @@ class MySimpleShippingMethod extends AbstractCarrier
     }
 
     /**
-     * @return string
-     */
-    public function getCarrierName(): string
-    {
-        return self::CARRIER_NAME;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMethodName(): string
-    {
-        return self::METHOD_NAME;
-    }
-
-    /**
      * @return Method
      */
     private function generateShippingMethod(): Method
@@ -123,9 +107,9 @@ class MySimpleShippingMethod extends AbstractCarrier
         $method = $this->rateMethodFactory->create();
         $price = (float) $this->getConfigData('price');
 
-        $method->setCarrier($this->getCarrierName());
+        $method->setCarrier(self::CARRIER_NAME);
         $method->setCarrierTitle($this->getConfigData('title'));
-        $method->setMethod($this->getMethodName());
+        $method->setMethod(self::METHOD_NAME);
         $method->setMethodTitle($this->getConfigData('name'));
 
         $method->setCost($price);  // shipping
